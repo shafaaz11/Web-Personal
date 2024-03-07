@@ -1,0 +1,159 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #194791;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #ff8c00;
+}
+
+header {
+    background-color: #9bcff1;
+    padding: 2em;
+    text-align: center;
+    margin: auto;
+}
+
+#title {
+    font-size: 32px;
+    margin: 0;
+    animation: bounce 1s infinite;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a img {
+    width: 40px;
+    height: 40px;
+    filter: grayscale(0%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.social-links a img:hover {
+    filter: grayscale(100%);
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+    margin: 20px auto;
+    background: #cddefd;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Set a maximum width for better readability */
+    margin-left: auto; /* Center the content */
+    margin-right: auto; /* Center the content */
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px; /* Set a maximum width for better readability */
+    margin-left: auto; /* Center the content */
+    margin-right: auto; /* Center the content */
+    margin-bottom: 20px; /* Add some space at the bottom */
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 70%;
+    height: 300px;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.about-info {
+    flex: 1;
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+.about-info h2 {
+    color: #000000;
+}
+
+.about-info p {
+    line-height: 1.6;
+}
+
+.about-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.about-info li {
+    margin: 10px 0;
+}
+
+.about-info li strong {
+    margin-right: 5px;
+}
+
+footer {
+    background-color: #9bcff1;
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+    bottom: 0;
+    width: 100%;
+}
